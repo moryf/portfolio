@@ -1,0 +1,7 @@
+.floating-element {
+  position: absolute;
+  bottom: 50px;
+  right: 250px;
+  margin: 1rem;
+  z-index: 1000;
+}

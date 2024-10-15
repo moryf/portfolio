@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Clash';
+  src: url('./util/ClashDisplay-Variable.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  height: 100%;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Clash', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.back-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border:#090c08 1px solid;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #090c08;
+  color: #b0c0bf;
 }
 
-.App-link {
-  color: #61dafb;
+.back-to-top:hover{
+  background-color: #b0c0bf;
+  color: #090c08;
+  transition: all 0.5s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.back-to-top:active{
+  background-color: #391463;
+  color: #b0c0bf;
+  transition: all 0.5s ease;
 }

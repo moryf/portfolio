@@ -1,0 +1,23 @@
+.section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b0c0bf;
+    color: #090c08;
+    padding: 12px;
+    max-width: 100vw;
+    scroll-snap-align: start;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 768px){
+    .section{
+        height: auto;
+        width: auto;
+        min-height: 100vh;
+    }
+    
+}

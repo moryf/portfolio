@@ -1,0 +1,142 @@
+.home-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    background-color: #f5f5f5;
+    width: 65vw;
+    min-height: 500px;
+    min-width: 750px;
+    border-radius: 15px;
+    margin: auto;
+    animation: moveInFromTop  1s ease;
+    border: #090c08 1px solid;
+    box-shadow: 12px 12px 1px 0 #090c08;
+    transition: all 0.3s ease;
+}
+
+
+.home-section .title{
+    width: 50%;
+    margin: 12px;
+}
+
+
+.home-section .title h1{
+    font-size: 5rem;
+    color: #090c08;
+    animation: floatIn 1s ease;
+
+}
+
+.home-section .title h2{
+    font-size: 3rem;
+    color: #090c08;
+    animation: floatIn 2s ease;
+}
+
+.home-section .title p{
+    font-size: 1.5rem;
+    color: #090c08;
+    animation: floatIn 3s ease;
+}
+
+.home-section .title sub{
+    font-size: 1rem;
+    color: #090c08;
+    animation: floatIn 5s ease;
+}
+
+@keyframes floatIn{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes moveInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes addShadow {
+    0% {
+        box-shadow: 0px 0px 0px 0px #090c08;
+        
+    }
+    100% {
+        box-shadow: 12px 12px 1px 0 #090c08;
+    }
+    
+}
+
+.home-section .image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.home-section .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .home-section{
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        min-width: auto;
+        min-height: auto;
+    }
+
+    .home-section .title{
+        width: 50%;
+    }
+
+    .home-section .image{
+        width: 80%;
+        height: 80%;
+    }
+
+
+    .home-section .title h1{
+        font-size: 3rem;
+    }
+
+    .home-section .title h2{
+        font-size: 2rem;
+    }
+
+    .home-section .title p{
+        font-size: 1rem;
+    }
+
+    .home-section .title sub{
+        font-size: 0.8rem;
+    }
+    
+}
+

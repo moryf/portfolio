@@ -1,0 +1,83 @@
+
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 5vw;
+    min-width: 50px;
+    display: flex;
+    transition: all 0.5s ease;
+    animation: slideInFromRight 1s;
+}
+
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+    background-color: rgba(9, 12, 8,0.1);
+    backdrop-filter: blur(10px);
+    box-shadow:5px 2px 5px 0px rgba(9, 12, 8,0.5) ;
+    border-radius: 15px 0 0 15px;
+}
+
+.sidebar ul li{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: all 0.5s ease;
+}
+
+.sidebar ul li a{
+    width: 0;
+   opacity: 0;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(9, 12, 8,0.1);
+    text-decoration: none;
+    transform: translateX(10vw);
+    transition: all 0.5s ease;
+}
+
+.sidebar:hover ul li a{
+    margin: 6px;
+        width: 100%;
+    opacity: 1;
+    display: block;
+    color: #090c08;
+    transition: all 0.5s ease;
+    transform: translateX(0);
+}
+
+.sidebar:hover ul li:hover{
+    color: #ff5964;
+    border-radius: 15px;
+        transition: all 0.5s ease;
+}
+
+.sidebar:hover{
+    width: 10vw;
+    min-width: 125px;
+    transition: all 0.5s ease;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    
+}
