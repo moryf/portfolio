@@ -13,6 +13,23 @@
     transition: all 0.5s ease;
 }
 
+.next-section-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #090c08;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.next-section-button:hover{
+    color: #391463;
+}
+
 @media screen and (max-width: 768px){
     .section{
         height: auto;

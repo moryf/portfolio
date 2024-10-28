@@ -1,41 +1,141 @@
 .projects-section{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     background-color: #f5f5f5;
-    min-height: 500px;
+    min-height: 70vh;
     width: 80%;
     margin: 0 auto;
     border-radius: 15px;
     padding: 12px;
     border: #090c08 1px solid;
-    overflow: hidden;
 }
 
-.slider-container {
-    width: 100%; /* or a specific width */
-    max-width: 50vw;
+.projects-section h2{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #090c08;
+    margin: 12px;
 }
 
-
-.center{
+.projects{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
     width: 100%;
-    max-width: 80vw;
+    flex-direction: row;
+    flex-grow: 2;
+    margin: 12px;
+    scrollbar-width: thin;
+    scrollbar-color: #391463 #f5f5f5;
+
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe74c;
+    width: 50vw;
+    min-width: 75%;
     height: 100%;
+    min-height: 50vh;
+    border-radius: 15px;
+    margin: 12px;
+    padding: 12px;
+    border: #391463 1px solid;
+    box-shadow: 6px 6px 0 0 #391463;
 }
 
-.slider-item{
-    height: 500px;
-    width: 100%;
+.project-left{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 12px;
-    border: #090c08 1px solid;
-    border-radius: 15px;
-    margin: 12px;
-    background-color: #f5f5f5;
+    width: 10%;
+    height: 100%;
+}
 
+.project-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.project-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+
+
+
+.project img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.project .mobile-image{
+    display: none;
+}
+
+.project h3{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #391463;
+    margin: 12px;
+}
+
+.project p{
+    font-size: 1.5rem;
+    color: #391463;
+    margin: 12px;
+}
+
+
+.project-nav-button{
+    display: flex;
+    background-color: transparent;
+    border: none;
+    color: #391463;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.project-nav-button:hover{
+    color: #f5f5f5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .projects-section{
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .project{
+        min-width: 100%;
+    }
+
+    .project .mobile-image{
+        display: block;
+    }
+
+    .project .desktop-image{
+        display: none;
+    }
 }

@@ -17,6 +17,9 @@ function HomeSection() {
                 <sub>Scroll down to start the adventure!</sub>
             </div>
         </div>
+        <button className='next-section-button' onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>
+                next
+        </button>
     </div>
   )
 }

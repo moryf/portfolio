@@ -1,6 +1,7 @@
 
 import './App.css';
 import AboutSection from './components/section/AboutSection';
+import ContactSection from './components/section/ContactSection';
 import HomeSection from './components/section/HomeSection';
 import ProjectsSection from './components/section/ProjectsSection';
 import Sidebar from './components/sidebar/Sidebar';
@@ -12,6 +13,7 @@ function App() {
       <HomeSection />
       <AboutSection />
       <ProjectsSection />
+      <ContactSection />
      <Sidebar />
      <button onClick={()=>{
       window.scrollTo({top:0, behavior:'smooth'})

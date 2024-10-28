@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 65vh;
+    height: 75vh;
     background-color: #f5f5f5;
     width: 65vw;
     min-height: 500px;
@@ -105,8 +105,7 @@
 
 @media screen and (max-width: 768px){
     .home-section{
-        width: 100%;
-        height: fit-content;
+        width: 90vw;
         flex-direction: column;
         min-width: auto;
         min-height: auto;
@@ -117,8 +116,8 @@
     }
 
     .home-section .image{
-        width: 80%;
-        height: 80%;
+        width: 50%;
+        height: auto;
     }
 
 

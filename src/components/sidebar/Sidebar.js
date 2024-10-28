@@ -1,19 +1,29 @@
 import React from 'react'
 import './Sidebar.css'
-import AddHomeOutlinedIcon from '@mui/icons-material/AddHomeOutlined';
-import AcUnitOutlinedIcon from '@mui/icons-material/AcUnitOutlined';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import ContactsOutlinedIcon from '@mui/icons-material/ContactsOutlined';
+import ViewCarouselOutlinedIcon from '@mui/icons-material/ViewCarouselOutlined';
+import ContactPageOutlinedIcon from '@mui/icons-material/ContactPageOutlined';
 
 function Sidebar() {
   return (
     <div className='sidebar'>
         <ul>
             <li>
-                <AddHomeOutlinedIcon />
+                <HomeOutlinedIcon />
                 <a href='/#home'>Home</a>
             </li>
             <li>
-                <AcUnitOutlinedIcon />
+                <ContactsOutlinedIcon />
                 <a href='/#about'>About</a>
+            </li>
+            <li>
+                <ViewCarouselOutlinedIcon />
+                <a href='/#projects'>Projects</a>
+            </li>
+            <li>
+                <ContactPageOutlinedIcon />
+                <a href='/#contact'>Contact</a>
             </li>
         </ul>
     </div>
