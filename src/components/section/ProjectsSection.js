@@ -20,21 +20,24 @@ function ProjectsSection() {
             description: 'A WooCommerce business site for a company specializing in the design, fabrication, and installation of metal structures, offering products such as fences, pergolas, and custom steel elements.',
             desktopImage: KonstilPicture,
             mobileImage: JoilArtPic,
-            gifDesktop: KonstilDesktopGif
+            gifDesktop: KonstilDesktopGif,
+            link: 'https://konstil.com/'
         },
         {
             title: 'Joilart',
             description: 'A WooCommerce site for a creative business offering custom metal gates and fences, combining traditional craftsmanship with modern CNC technology to create bespoke architectural solutions.',
             desktopImage: JoilArtPic,
             mobileImage: TraianPicture,
-            gifDesktop: JoilartDesktopGif
+            gifDesktop: JoilartDesktopGif,
+            link:'https://joilart.konstil.com/'
         },
         {
             title: 'Traian Art',
             description: 'A custom React.js portfolio site showcasing luxury wrought iron art pieces, combining responsive design with a clean, minimalist aesthetic to highlight the artists craftsmanship.',
             desktopImage: TraianPicture,
             mobileImage: KonstilPicture,
-            gifDesktop: TraianDesktopGif
+            gifDesktop: TraianDesktopGif,
+            link:'https://traian.art/'
         },
     ];
 
@@ -68,6 +71,7 @@ function ProjectsSection() {
                                     <ArrowBackIosRoundedIcon />
                                 </button>
                             </div>
+                            <a href={project.link}>
                             <div className='project-center'>
                                 <motion.img src={project.gifDesktop} alt={'project'+index} className='gif-image' 
                                     initial={{ opacity: 0 }}
@@ -78,6 +82,7 @@ function ProjectsSection() {
                                 <h3>{project.title}</h3>
                                 <p>{project.description}</p>
                             </div>
+                            </a>
                             <div className='project-right'>
                                 <button
                                     className='project-nav-button'

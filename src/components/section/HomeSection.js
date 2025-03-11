@@ -11,8 +11,8 @@ function HomeSection() {
                 <img src={Logo} alt='logo' />
             </div>
             <div className='title'>
-                <h1>welcome</h1>
-                <h2>to dodo</h2>
+                <h2>welcome to</h2>
+                <h1>dodo</h1>
                 <p>Join us for a journey through our portfolio!</p>
                 <sub>Scroll down to start the adventure!</sub>
             </div>
